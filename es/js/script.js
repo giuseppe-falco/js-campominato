@@ -35,27 +35,31 @@
             //controllo numero = 2 campoMinato reprompt numero
             //controllo numero = 1 campoMinato FINE
             //(uguale a 0) campoMinato[i] = valore 2
-        while (tentativi <= (limiteCiclo - numBombe)) {
-            console.log("Tentativo n." + tentativi + " di " + limiteCiclo);
-            var userNumber = (parseInt(prompt("Inerisci un numero compreso tra 1 e " + limiteCiclo)) - 1);
-            
-            if (campoMinato[userNumber] == 0) {
-                campoMinato[userNumber] = 2;
-                tentativi++;
-            } else if (campoMinato[userNumber] == 1) {
-                var singolare = " numeri corretti" ;
-                if (tentativi == 2) {
-                    singolare = " numero corretto";
+        function startGame () {
+
+            while (tentativi <= (limiteCiclo - numBombe)) {
+                console.log("Tentativo n." + tentativi + " di " + limiteCiclo);
+                var userNumber = (parseInt(prompt("Inerisci un numero compreso tra 1 e " + limiteCiclo)) - 1);
+                
+                if (campoMinato[userNumber] == 0) {
+                    campoMinato[userNumber] = 2;
+                    tentativi++;
+                } else if (campoMinato[userNumber] == 1) {
+                    var singolare = " numeri corretti" ;
+                    if (tentativi == 2) {
+                        singolare = " numero corretto";
+                    }
+                    alert("Hai perso, hai inserito " + (tentativi -1) + singolare);
+                    break;
+                } else {
+                    alert("Numero non valido")
                 }
-                alert("Hai perso, hai inserito " + (tentativi -1) + singolare);
-                break;
-            } else {
-                alert("Numero non valido")
-            }
-            if ((tentativi -1) == (campoMinato.length - numBombe)) {
-                alert("COMPLIMENTI HAI VINTO")
+                if ((tentativi -1) == (campoMinato.length - numBombe)) {
+                    alert("COMPLIMENTI HAI VINTO")
+                }
             }
         }
+
 
 
         //FINE

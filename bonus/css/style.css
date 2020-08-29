@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* start classi per js */
+.show{
+    opacity: 0;
+}
+/* end classi per js */
+/* start classi generiche */
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+/* end classi generiche */
+
+.container{
+    margin-left:50px;
+}
+
+div{
+    padding: 30px 0;
+}
+button, select{
+    margin: 20px 0;
+}

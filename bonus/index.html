@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prato Fiorito</title>
+</head>
+<body>
+   <div class="container center">
+       <!-- pop-up scelta livello  -->
+        <div id="select-level" class="center">
+            <h2>Scelta livello</h2>
+            <select id="level">
+                <option value="0">Facile</option>
+                <option value="1">Medio</option>
+                <option value="2">Difficile</option>
+            </select><br>
+            <button onclick="popupLevel()">Scegli</button>
+        </div>
+        <!-- sezione output livello -->
+        <div class="output-level">
+            <h2>Livello <span id="out-level"></span></h2>
+            <h3>N. tentativi <span id="num-tentativi"></span></h3>
+            <input type="number" min="1" id="number-user">
+            <button onclick="sendNumber()">Invia</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

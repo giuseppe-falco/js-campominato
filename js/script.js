@@ -44,7 +44,7 @@
                 tentativi++;
             } else if (campoMinato[userNumber] == 1) {
                 var singolare = " numeri corretti" ;
-                if (tentativi = 1) {
+                if (tentativi == 1) {
                     singolare = " numero corretto";
                 }
                 alert("Hai perso, hai inserito " + (tentativi -1) + singolare);

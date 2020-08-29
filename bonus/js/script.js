@@ -55,7 +55,7 @@
 
 //////////////////////////////////////////////////FUNZIONI////////////////////////////////////////////////
 
-//funziona scelta livello
+//funzioni scelta livello
     //funzione botton scelta livello
     function popupLevel () {
         // document.getElementById("select-level").classList.add("show");
@@ -118,25 +118,26 @@
         function sendNumber () {
 
             userNumber = document.getElementById("number-user").value;
-            // while (tentativi <= (limiteCiclo - numBombe)) {
-                outputTentativo = ("Tentativo n." + tentativi + " di " + limiteCiclo);
-                // var userNumber = (parseInt(prompt("Inerisci un numero compreso tra 1 e " + limiteCiclo)) - 1);
-                // console.log(userNumber)
-                // if (campoMinato[userNumber] == 0) {
-                //     campoMinato[userNumber] = 2;
-                //     tentativi++;
-                // } else if (campoMinato[userNumber] == 1) {
-                //     var singolare = " numeri corretti" ;
-                //     if (tentativi == 1) {
-                //         singolare = " numero corretto";
-                //     }
-                //     alert("Hai perso, hai inserito " + (tentativi -1) + singolare);
-                //     // break;
-                // } else {
-                //     // alert("Hai già inserito questo numero")
+                //////ciclo usato cartella es, non cancello perchè non si puo mai sapere///
+                // while (tentativi <= (limiteCiclo - numBombe)) {
+                    outputTentativo = ("Tentativo n." + tentativi + " di " + limiteCiclo);
+                    // var userNumber = (parseInt(prompt("Inerisci un numero compreso tra 1 e " + limiteCiclo)) - 1);
+                    // console.log(userNumber)
+                    // if (campoMinato[userNumber] == 0) {
+                    //     campoMinato[userNumber] = 2;
+                    //     tentativi++;
+                    // } else if (campoMinato[userNumber] == 1) {
+                    //     var singolare = " numeri corretti" ;
+                    //     if (tentativi == 1) {
+                    //         singolare = " numero corretto";
+                    //     }
+                    //     alert("Hai perso, hai inserito " + (tentativi -1) + singolare);
+                    //     // break;
+                    // } else {
+                    //     // alert("Hai già inserito questo numero")
+                    // }
+                
                 // }
-               
-            // }
             if (campoMinato != "") {
 
                 if (userNumber != "") {
